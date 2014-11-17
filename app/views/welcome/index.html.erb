@@ -1,0 +1,16 @@
+<br />
+<div class="row">
+	<div class="col-md-6 col-md-offset-3">
+		<h1>Welcome to Next-Stop MARTA</h1>
+		<p>This site is designed to help you keep track of the next stop on your MARTA bus.</p>
+		<br />
+		<p></p>
+
+		<h3>Enter your bus number here:</h3>
+		<%= form_tag('nextstop') do %>
+			<%= number_field_tag :busnum, nil, placeholder: "Bus Number", autofocus: true %><br />
+			<%= submit_tag "Next Stop!", class: "btn btn-success"  %>
+		<% end %>
+		<br />
+	</div>
+</div>

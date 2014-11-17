@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Next-Stop MARTA</title>
+  <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link href="http://fonts.googleapis.com/css?family=Rancho" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Gudea" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div class="container">
+	<%= yield %>
+	<br />
+</div>
+
+</body>
+</html>

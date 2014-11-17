@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Busnum:</strong>
+  <%= @result.busnum %>
+</p>
+
+<p>
+  <strong>Nextstop:</strong>
+  <%= @result.nextstop %>
+</p>
+
+<%= link_to 'Edit', edit_result_path(@result) %> |
+<%= link_to 'Back', results_path %>

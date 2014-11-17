@@ -1,0 +1,44 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body{
+	background: url(<%= asset_path "bus.jpg" %>) no-repeat;
+	background-size: cover;
+}
+
+.col-md-6{
+	background:rgba(171, 156, 135, 0.75);
+	-moz-box-shadow: -6px 17px 27px #000;
+	-webkit-box-shadow: -6px 17px 27px #000;
+	box-shadow: -6px 17px 27px #000;
+	text-align: center;
+}
+
+h1{
+  font: 400 55px/1.1 'Rancho', Georgia, serif;
+}
+
+h3 {
+  font: 400 35px/1.1 'Rancho', Georgia, serif;
+}
+ 
+p, strong {
+  font: 400 17px/1.6 'Gudea', Verdana, Helvetica, sans-serif;
+}
+
+.cant-see-me{
+	visibility: hidden;
+}
