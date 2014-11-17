@@ -12,6 +12,7 @@ end
 # sqlite3 for development/local environment.
 group :production, :staging do
 	gem 'pg'
+	gem 'rails_12factor'
 end
 
 # Use SCSS for stylesheets
