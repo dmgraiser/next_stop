@@ -2,11 +2,12 @@
 <div class="row">
 	<div class="col-md-6 col-md-offset-3">
 		<h1>Next Stop!</h1>
-		<p>This is the area where you will see the next stop.</p>
-		<div><%= @message %></div>
-		<div><%= @nextstop %></div>
+		
+		<div class="message"><%= @message %></div>
+		<div class="next-stop"><%= @nextstop %></div>
 		<br />
-
+		<div><%= link_to 'Back', root_path, class: "btn btn-success btn-lg" %></div>
+		<br />
 	</div>
 </div>
 <br />

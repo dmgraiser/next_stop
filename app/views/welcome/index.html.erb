@@ -6,11 +6,19 @@
 		<br />
 		<p></p>
 
-		<h3>Enter your bus number here:</h3>
-		<%= form_tag('nextstop') do %>
-			<%= number_field_tag :busnum, nil, placeholder: "Bus Number", autofocus: true %><br />
-			<%= submit_tag "Next Stop!", class: "btn btn-success"  %>
-		<% end %>
+		<h3>Enter your four-digit bus number here:</h3>
+			<div class="row">
+				<div class="col-xs-4 col-xs-offset-4"
+					<div class="form-group">
+						<%= form_tag('nextstop') do %>
+							<%= text_field_tag :busnum, nil, placeholder: "Bus Number", autofocus: true, class: "form-control input-lg" %><br />
+							<%= submit_tag "Next Stop!", class: "btn btn-success btn-lg"  %>
+						<% end %>
+					</br>
+					</div>
+				</div>
+			</div>		
+		</div>
 		<br />
 	</div>
 </div>

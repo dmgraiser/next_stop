@@ -14,6 +14,10 @@
  *= require_self
  */
 
+ html, body{
+ 	height: 100%;
+ }
+
 body{
 	background: url(<%= asset_path "bus.jpg" %>) no-repeat;
 	background-size: cover;
@@ -37,8 +41,37 @@ h3 {
  
 p, strong {
   font: 400 17px/1.6 'Gudea', Verdana, Helvetica, sans-serif;
+  font-size: 2em;
 }
 
 .cant-see-me{
 	visibility: hidden;
+}
+
+.message{
+	font: 400 17px/1.6 'Gudea', Verdana, Helvetica, sans-serif;
+	font-size: 2em;
+}
+
+.next-stop{
+	font: 400 35px/1.1 'Rancho', Georgia, serif;
+	color: #892122;	
+	font-size: 5em;
+}
+
+.footer{
+	color: black;
+	text-align: center;
+}
+
+.navbar{
+	min-height: 0;
+}
+
+/*.navbar-fixed-bottom{
+	bottom: 0px;
+}*/
+
+.btn{
+	margin-top: 1em;
 }
