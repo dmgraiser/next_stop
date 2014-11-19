@@ -5,9 +5,14 @@ module ApplicationHelper
 			@message = ""
 			#we want to provide the user with the name of the next stop for their bus by calling the TIMEPOINT where the VEHICLE number matches the user's input.
 			@results.each do |result|
+				
+				@active_busses.push(result["VEHICLE"])
+
 				if result["VEHICLE"] == busnum.to_s
 					#if the User's bus number matching an active bus in the API data, we will rename @nextstop
 					@nextstop = result["TIMEPOINT"]
+
+					@active_busses = result["VEHICLE"]
 					
 					@message = "Your next stop will be:"
 					#break needed to keep the loop from continuing throught the rest of the data

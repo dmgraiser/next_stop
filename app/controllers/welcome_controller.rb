@@ -10,6 +10,11 @@ class WelcomeController < ApplicationController
   #welcome/home
   #just a home/landing-page
   def index
+    @busnum = params[:busnum]
+
+    @results = JSON.parse(open("http://developer.itsmarta.com/BRDRestService/BRDRestService.svc/GetAllBus").read)
+
+    @active_busses = []
   end
 
   def nextstop
