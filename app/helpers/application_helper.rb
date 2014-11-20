@@ -24,15 +24,11 @@ module ApplicationHelper
 		end
 
 		def bus_on_road
+			
+			@active_busses = []
 			@results.each do |bus_info|
-				
-				@active_busses = []
 				@active_busses.push(bus_info["VEHICLE"])
 			end
-
-			puts "**********"
-			puts @active_busses
-			puts "**********"
 
 		end
 end
