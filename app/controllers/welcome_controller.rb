@@ -13,8 +13,10 @@ class WelcomeController < ApplicationController
     @busnum = params[:busnum]
 
     @results = JSON.parse(open("http://developer.itsmarta.com/BRDRestService/BRDRestService.svc/GetAllBus").read)
+    
+    bus_on_road
 
-    @active_busses = []
+    hash_and_msg_generator(@results, @busnum)
   end
 
   def nextstop
@@ -25,6 +27,7 @@ class WelcomeController < ApplicationController
 
     hash_and_msg_generator(@results, @busnum)
     #find this method in the Application Helper!
+
   end
 
 end

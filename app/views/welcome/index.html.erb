@@ -11,7 +11,7 @@
 				<div class="col-xs-4 col-xs-offset-4"
 					<div class="form-group">
 						<%= form_tag('nextstop') do %>
-							<%= select_tag :busnum, @active_busses.each {|x| [x]}, placeholder: "Bus Number" %><br />
+							<%= select_tag( :busnum, options_for_select(@active_busses.collect {|b| [b]}), prompt: "Select Bus") %><br />
 							<%= submit_tag "Next Stop!", class: "btn btn-success btn-lg"  %>
 						<% end %>
 					</br>
