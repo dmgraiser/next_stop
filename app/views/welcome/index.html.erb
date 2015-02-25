@@ -8,7 +8,7 @@
 
 		<h3>Choose your bus number here:</h3>
 			<div class="row">
-				<div class="col-xs-4 col-xs-offset-4"
+				<div class="col-xs-4 col-xs-offset-4">
 					<div class="form-group">
 						<%= form_tag('nextstop') do %>
 							<%= select_tag( :busnum, options_for_select(@active_busses.collect {|b| [b]}.sort), prompt: "Select Your Bus", class: "btn btn-default btn-lg dropdown-toggle") %><br />
